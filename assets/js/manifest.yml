@@ -1,0 +1,4 @@
+# manifest.yml
+- vendor/jquery-1.9.1.min.js
+- vendor/slick.min.js
+- main.coffee

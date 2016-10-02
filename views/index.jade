@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .stage
+    .photos
+      - for (var i = 1; i < 65; ++i)
+        div.item
+         img(src='img/casamento/#{i}.jpeg' class='photo' data-lazy='img/casamento/#{i}.jpeg')
