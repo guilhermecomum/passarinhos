@@ -1,6 +1,5 @@
 @import '_settings'
-@import 'slyck'
-@import 'slyck-theme'
+@import '_slyck'
 
 normalize-css()
 base()
@@ -8,13 +7,32 @@ base()
 body
   background: $black
   .stage
-    width: 80%
-    margin: 0 auto
-    text-align: center
+    position: relative
+    .credits
+      width: 80%
+      position: absolute
+      bottom: 0
+      margin: 0 auto
+      left: 0
+      right: 50px
+      z-index: 9999
+      text-align: right
+      p
+        font-family: sans-serif
+        color: white
+        text-shadow: 1px 1px #000
+        a
+          color: white
     .photos
+      margin: 0 auto
+      width: 80%
       .item
-        text-align: center
         .photo
           width: auto
           height: 100vh
           margin: 0 auto
+        .toolbar
+          display: block
+          position: absolute
+          bottom: 10px
+          right: 10px
